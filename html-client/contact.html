@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Contact Form </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="../styles/admin.css?version=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+	
+
+	<style >
+
+  
+.container{
+  background: #F8F8F8;
+  width: 90%;
+  height: 750px;
+  margin: 5% auto;
+  box-shadow: 0px 0px 10px #C8C7D9;
+  position: relative;
+  overflow-y: hidden;
+  }
+  .map{
+    width: 45%;
+    float: left;
+    }
+  .contact-form{
+  
+    width: 53%;
+    margin-left: 2%;
+    float: left;}
+    .title{
+      font-size: 2.5em;
+      font-family: Open Sans,sans-serif;
+      font-weight: 700;
+      color: #242424;
+      margin: 5% 8%;}
+    .subtitle{
+      font-size: 1.2em;
+      font-weight: 400;
+      margin: 0 4% 5% 8%;
+      font-family: Open sans, sans-serif;
+    }
+    
+    input,
+    textarea{
+      width: 330px;
+      padding: 3%;
+      margin: 2% 8%;
+      color: #242424;
+      border: 1px solid #B7B7B7;}
+
+     input,textarea[placeholder]{
+        color: #242424;
+         font-family: Open sans, sans-serif;
+     }
+
+    .btn-send{
+      background: #22356F;
+      width: 180px;
+      height: 60px;
+      color: #F8F8F8;
+      font-weight: 700;
+      margin: 2% 8%;
+      border: none;
+      font-family:Open Sans ,sans-serif;
+}
+
+.footer-distributed{
+	background: #22356F;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+	overflow-y: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 200px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+  overflow-y: hidden;
+}
+
+
+/* Footer left */
+
+.footer-distributed {
+	float: left;
+	padding-left: 80px;
+}
+
+/* The company logo */
+
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+
+.footer-distributed p{
+	position: relative;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+.footer-left{
+	float: left;
+	margin-right: 700px;
+}
+.footer-left span{
+float: right;
+margin-top: 20px;
+margin-right: 100px;
+font-family: Montserrat,sans-serif;
+}
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+
+
+	</style>
+<header>
+	    <div class="flex-row">
+            <img src="../images/logo.png" width="50px" height="50px">
+            <span>FinProj</span>
+            <div class="title"></div>
+
+        </div>
+    </header>
+	<div class="container">
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13249.247068040606!2d151.20960562674117!3d-33.8816236491114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1468899355787" width="100%" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="contact-form">
+    <h1 class="title">Contact Us</h1>
+    <h2 class="subtitle">We are here assist you.</h2>
+    <form action="">
+      <input type="text" name="name" placeholder="Your Name" />
+      <input type="email" name="e-mail" placeholder="Your E-mail Adress" />
+      <input type="tel" name="phone" placeholder="Your Phone Number"/>
+      <textarea name="text" id="" rows="8" placeholder="Your Message"></textarea>
+      <button class="btn-send" onclick="window.location.href='../html-admin/categories.html';">Get a Call Back</button>
+    
+  </div>
+</div>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<img src="../images/logo.png" width="50px">
+            <span>FinProj</span>
+
+				<p class="footer-links">
+					<a href="../html-client/index.html">Home</a>
+					·
+					<a href="../html-client/index.html">Blog</a>
+
+					·
+					<a href="../html-client/about.html">About</a>
+
+					·
+					<a href="../html-client/contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Zhansaya Code © 2021</p>
+
+				<div class="footer-icons">
+
+					<a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=ru"><i class="fa fa-twitter"></i></a>
+					<a href="https://kz.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+			
+
+		</footer>
+
+	</body>
+</html>
+

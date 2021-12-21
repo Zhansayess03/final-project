@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <title>Admin panel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/admin.css?version=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="../images/icons/adminfavicon.png">
+    <script src="../scripts/jquery-min.js"></script>
+    <script src="../scripts/texthighlighter/rangy-core.js"></script>
+    <script src="../scripts/texthighlighter/jquery.texthighlighter.js"></script>
+    <script src="../scripts/mediadescription.js"></script>
+    <script src="../scripts/error.js"></script>
+    <script src="../scripts/tags.js"></script>
+    <script src="../scripts/aliasmaker.js"></script>
+    <script src="../scripts/click-actions.js?version=1"></script>
+    <script src="../scripts/images-actions.js?version=1"></script>
+    <script src="../scripts/articles.js?version=1"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="flex-row">
+            <img src="../images/logo.png" width="50px">
+            <span>FinProj</span>
+             <div class="header_buttons">
+                <a href="login.html">Exit</a>
+                <a href="categories.html" class="active">Sections</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Сообщение об ошибке -->
+    <div class="error-holder">
+        <span>Error</span>
+    </div>
+
+    <div class="holder type flex-container flex-col padding20">
+        <!-- Языковая панель -->
+        <div class="options-header">
+            <a href="#" class="button ">kz</a>
+            <a href="#" class="button ">en</a>
+            <a href="#" class="button active">ru</a>
+        </div>
+        <!-- Языковая панель КОНЕЦ -->
+        <!-- Форма редактора -->
+        <div class="flex-col flex-full padding20">
+            <label for="imgarticle">Main image</label>
+            <div class="logo-holder imgarticle">
+                <img src="../images/image.jpg">
+            </div>
+            <div class="flex-row">
+                <div class="button green imgarticle" id="main-article-img">+ Add</div>
+                <div class="button red" id="del-main-img">Delete</div>
+                <div style="height: 0; width: 0; overflow: hidden; float: left;">
+                    <input id="imgarticle" type="file" name="shopimage" accept="image/*">
+                </div>
+            </div>
+        </div>
+        <div class="flex-row flex-full">
+            <div class="flex-col flex-half padding20">
+                <div class="input-row">
+                    <label for="title">Course title</label>
+                    <input type="text" id="title">
+                </div>
+                <div class="input-row">
+                    <label for="alias">URL category (without a domain and /)</label>
+                    <input type="text" id="alias">
+                </div>
+                <div class="input-row">
+                    <span class="label">Course category</span>
+                    <div class="cat-holder check-holder flex-row flex-row-wrap" id="article-categories">
+                        <div class="cat check active"></div>
+                        <div class="cat check">How to clone git repository in github?</div>
+                        <div class="cat check">Solution (math analysys) </div>
+                        <div class="cat check">Introduction to Html5</div>
+                        <div class="cat check">Type of conflicts(psyhology)</div>
+                        <div class="cat check">Presen Perfect</div>
+                        <div class="cat check">War Communism</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-col flex-half padding20">
+                <div class="input-row">
+                    <label for="htmltitle">META title</label>
+                    <input type="text" id="htmltitle">
+                </div>
+                <div class="input-row">
+                    <label for="htmldescription">META description</label>
+                    <input type="text" id="htmldescription">
+                </div>
+                <div class="input-row">
+                    <label for="htmlkeywords">META keywords</label>
+                    <input type="text" id="htmlkeywords">
+                </div>
+                <div class="input-row flex-row">
+                    <div class="flex-col flex-half tag-holder">
+                        <label for="tags">Enter the tag and press edit</label>
+                        <input id="tags" type="text">
+                        <div class="autofill-bar"></div>
+                    </div>
+                    <div class="flex-col flex-half">
+                        <label for="article-tags">Course tags</label>
+                        <div id="article-tags" class="tags-holder">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-col flex-full padding20">
+            <label for="shortdescription">Short description</label>
+            <textarea id="shortdescription"></textarea>
+        </div>
+        <div class="flex-col flex-full padding20">
+            <div class="mediaelement article-mediadescr clear">
+                <label for="mediacontent">Text on the course page</label>
+                <div id="mediacontent" class="mediacontent" style="display: none"></div>
+            </div>
+        </div>
+        <!-- Форма редактора КОНЕЦ -->
+        <!-- История модерации -->
+        <div class="flex-col flex-full padding20">
+            <div class="open-bayan link">History of moderation:</div>
+            <div class="bayan v-list">
+                <div class="v-item flex-row">
+                    <div class="title">superadmin</div>
+                    <div class="created flex-col">
+                        <span>Created: Thu, Dec 20, 2021, at 20:24</span>
+                    </div>
+                </div>
+
+                <div class="v-item flex-row">
+                    <div class="title">superadmin</div>
+                    <div class="created flex-col">
+                        <span>Moderated: Thu, Dec 20, 2021, at 20:24</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- История модерации КОНЕЦ -->
+        <!-- Кнопки -->
+        <div class="flex-col flex-full padding20">
+            <div class="buttons id-info flex-row flex-centered">
+                <div class="button green" id="edit-article">Save</div>
+                <div class="button red" id="delete-article">Delete</div>
+                <a href="articles.html" class="button">Cancel</a>
+                <div class="loader"></div>
+            </div>
+        </div>
+        <!-- Кнопки КОНЕЦ -->
+    </div>
+    <!-- footer -->
+    <footer>
+        <small>#ZhansayaCode © 2021</small>
+    </footer>
+    <!-- footer КОНЕЦ -->
+    </body>
+</html>
+

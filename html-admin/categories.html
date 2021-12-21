@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <title>Final project</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/admin.css?version=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="../images/icons/adminfavicon.png">
+    <script src="../scripts/jquery-min.js"></script>
+    <script src="../scripts/jquery-ui-min.js"></script>
+    <script src="../scripts/error.js"></script>
+    <script src="../scripts/aliasmaker.js"></script>
+    <script src="../scripts/click-actions.js?version=1"></script>
+    <script src="../scripts/categories.js?version=1"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+       <div class="flex-row">
+            <img src="../images/logo.png" width="50px">
+            <span>FinProj</span>
+             <div class="header_buttons">
+                <a href="login.html">Exit</a>
+            </div>
+
+        </div>
+    </header>
+    
+    <!-- Сообщение об ошибке -->
+    <div class="error-holder">
+        <span>Error</span>
+    </div>
+    <!-- Сообщение об ошибке КОНЕЦ -->
+    <div class="holder type">
+        <div class="options-header">
+             <a href="editarticle.html" class="button green">Add course +</a>
+        </div>
+        <div class="holder c-holder">
+            <div class="blog-content">
+                <ul class="ui-sortable" id="sortable">
+                    <!-- Главная страница -->
+                    <li class="ui-state-default ismain ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Welcome to FinProj</span>
+                            <span class="small">Main page (0 change)</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="editcategory.html" class="edit">Edit</a>
+                        </div>
+                    </li>
+                    <!-- Главная страница КОНЕЦ -->
+                    <!-- Категория -->
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Introduction to Web</span>
+                            <span class="small">4 page</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">View</a>
+                            <a href="editcategory.html" class="edit">Edit</a>
+                        </div>
+                    </li>
+                    <!-- Категория КОНЕЦ -->
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Mathematical analysis</span>
+                            <span class="small">4 page</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">View</a>
+                            <a href="editcategory.html" class="edit">Edit</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Psyhology</span>
+                            <span class="small">3 page</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">View</a>
+                            <a href="editcategory.html" class="edit">Edit</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Discrete mathematics</span>
+                            <span class="small">6 page</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">View</a>
+                            <a href="editcategory.html" class="edit">Edit</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Physical culture</span>
+                            <span class="small">4 page</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">View</a>
+                            <a href="editcategory.html" class="edit">Edit</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Modern history of Kazakhstan</span>
+                            <span class="small">8 page</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">View</a>
+                            <a href="editcategory.html" class="edit">Edit</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">English course</span>
+                            <span class="small">5 page</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">View</a>
+                            <a href="editcategory.html" class="edit">Edit</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <small>#ZhansayaCode © 2021</small>
+    </footer>
+    <!-- footer КОНЕЦ -->
+</body>
+</html>

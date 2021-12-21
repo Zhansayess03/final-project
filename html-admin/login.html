@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="../styles/admin.css?version=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">></script> 
+    <script src="../scripts/error.js"></script>
+    <script src="../scripts/login.js?version=1"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Login header -->
+    <header>
+        <div class="flex-row">
+            <img src="../images/logo.png" width="50px">
+            <span>FinProj</span>
+            <div class="title"></div>
+
+        </div>
+    </header>
+    <!-- Сообщение об ошибке -->
+    <div class="error-holder">
+        <span>Error</span>
+    </div>
+    <!-- Сообщение об ошибке КОНЕЦ -->
+    <div class="content">
+        <div class="holder">
+            <!-- Форма входа -->
+            <div class="login">
+                <div class="login-animate"> Login</div>
+               <!-- <h1>Login</h1> -->
+                <div class="input-row">
+                    <label for="username">Name</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="input-row">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                </div>
+                <div class="input-row">
+                    <label>
+      <input type="checkbox" class="rem-checkbox" checked="checked" name="remember"> Remember me
+    </label>
+                    <div class="b-login button green">Sign in</div>
+                    <span class="psw">Forgot_ <a href="#"> password? </a><a href="reg.html">| Registration</a> </span>
+                </div>
+
+            </div>
+            <!-- Форма входа КОНЕЦ -->
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <small>#ZhansayaCode © 2021</small>
+    </footer>
+    <!-- footer КОНЕЦ -->
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr"><head>
+    <title>Final project</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/admin.css?version=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="../images/icons/adminfavicon.png">
+    <script src="../scripts/jquery-min.js"></script>
+    <script src="../scripts/error.js"></script>
+    <script src="../scripts/articles.js?version=1"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;500&family=Readex+Pro:wght@400;600&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+<body>
+    <!-- header -->
+    <header>
+        <div class="flex-row">
+            <img src="../images/logo.png" width="50px">
+            <span>FinProj</span>
+            <div class="buttons">
+                <a href="login.html">Exit</a>
+                <a href="categories.html" class="active">Sections</a>
+            </div>
+
+        </div>
+    </header>
+    <!-- Сообщение об ошибке -->
+    <div class="error-holder">
+        <span>Error</span>
+    </div>
+    <!-- Сообщение об ошибке КОНЕЦ -->
+    <div class="holder type">
+        <div class="options-header">
+            <a href="editarticle.html" class="button green">Add course +</a>
+        </div>
+        <div class="search padding20">
+            <input type="text" id="search-article" placeholder="Enter the title of the course">
+        </div>
+        <div class="articles v-list flex-full padding20">
+            <!-- Статья -->
+            <div class="v-item flex-row">
+                <div class="image">
+                    <img src="../images/image.jpg" width="40" height="40" alt="How to clone git repository in github?">
+                </div>
+                <div class="title">How to clone git repository in github?</div>
+                <div class="created flex-col">
+                    <span>Created: Thu, Dec 20, 2021, at 20:24</span>
+                    <span>Updated: Wend,  Feb 21 2021, at 16:56</span>
+                </div>
+                <div class="published">
+                    <span class="no">Not published</span>
+                </div>
+                <div class="buttons">
+                    <a href="editarticle.html" class="button green">Edit</a>
+                </div>
+            </div>
+            <!-- Статья КОНЕЦ -->
+            <div class="v-item flex-row">
+                <div class="image">
+                    <img src="../images/image.jpg" width="40" height="40" alt="Что можно сделать из пластиковой бутылки">
+                </div>
+                <div class="title">How to creat Admin panel?</div>
+                <div class="created flex-col">
+                    <span>Created: Thu, Dec 20, 2021, at 20:24</span>
+                    <span>Updated: Wend,  Feb 21 2021, at 16:56</span>
+                </div>
+                <div class="published">
+                    <span class="yes">Published</span>
+                </div>
+                <div class="buttons">
+                    <a href="editarticle.html" class="button green">Edit</a>
+                </div>
+            </div>
+            <div class="v-item flex-row">
+                <div class="image">
+                    <img src="../images/image.jpg" width="40" height="40" alt="Тима и Няша в детстве">
+                </div>
+                <div class="title">Solution (math analysys)</div>
+                <div class="created flex-col">
+                      <span>Created: Thu, Dec 20, 2021, at 20:24</span>
+                    <span>Updated: Wend,  Feb 21 2021, at 16:56</span>
+                </div>
+                <div class="published">
+                   <span class="yes">Published</span>
+                </div>
+                <div class="buttons">
+                    <a href="editarticle.html" class="button green">Edit</a>
+                </div>
+            </div>
+            <div class="v-item flex-row">
+                <div class="image">
+                    <img src="../images/image.jpg" width="40" height="40" alt="Как Боня читал сценарий к этому видео">
+                </div>
+                <div class="title">Introduction to Html5</div>
+                <div class="created flex-col">
+                    <span>Created: Thu, Dec 20, 2021, at 20:24</span>
+                    <span>Updated: Wend,  Feb 21 2021, at 16:56</span>
+                </div>
+                <div class="published">
+                     <span class="yes">Published</span>
+                </div>
+                <div class="buttons">
+                         <a href="editarticle.html" class="button green">Edit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <small>#ZhansayaCode © 2021</small>
+    </footer>
+    <!-- footer КОНЕЦ -->
+</body>
+</html>
