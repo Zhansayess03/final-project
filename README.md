@@ -1,4 +1,4 @@
-file:///C:/Users/User/Desktop/final%20project/final-project/html-client/about.html
+
 
 # Online school (final-project)
 
@@ -31,7 +31,7 @@ This is a solution to the [Online School]
 
 - Solution URL: https://github.com/Zhansayess03/final-project.git
 
-- Live Site URL: https:https://zhansayess03.github.io/final-project/
+- Live Site URL: file:///C:/Users/User/Desktop/final%20project/final-project/html-client/about.html
 
 ## My process
 
